@@ -50,4 +50,6 @@ const FormComponent: React.FC<FormComponentProps> = React.memo(({ formIndex, che
   );
 });
 
+FormComponent.displayName = 'FormComponent';
+
 export default FormComponent;
