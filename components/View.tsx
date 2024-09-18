@@ -18,7 +18,9 @@ const View: React.FC<ViewProps> = ({ data, textOnlyInput }) => {
     <div style="text-align: right; width: 70%; display: flex; flex-direction: column;">
       ${
         data[0]?.inputValue &&
-        `<h1 style="font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize; ${data[0]?.checkedValues[0]};${data[0]?.checkedValues[1]};${data[0]?.checkedValues[2]};${data[0]?.checkedValues[3]};${data[0]?.checkedValues[4]};">${data[0]?.inputValue}</h1>`
+        `<h1 style="font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize; ${data[0]?.checkedValues[0]};${data[0]?.checkedValues[1]};${
+          data[0]?.checkedValues[2]
+        };${data[0]?.checkedValues[3]};${data[0].checkedValues[4] && data[0]?.checkedValues[4]};">${data[0]?.inputValue}</h1>`
       }
       ${
         data[1]?.inputValue &&
@@ -47,11 +49,17 @@ const View: React.FC<ViewProps> = ({ data, textOnlyInput }) => {
     </div>
   </div>`;
 
+  const removeSubstring = (contentToCopy: string, substringToRemove: string): string => {
+    const regex = new RegExp(substringToRemove, 'g'); // Tạo biểu thức chính quy
+    return contentToCopy.replace(regex, ''); // Xóa chuỗi
+  };
+
+  console.log(removeSubstring(contentToCopy, 'undefined;'));
   return (
     <div>
-      <div className='toCopy text-sm'>{contentToCopy}</div>
+      <div className='toCopy text-sm'>{removeSubstring(contentToCopy, 'undefined;')}</div>
       <div className='fixed top-10 right-10'>
-        <CopyButton textToCopy={contentToCopy} />
+        <CopyButton textToCopy={removeSubstring(contentToCopy, 'undefined;')} />
       </div>
     </div>
   );
