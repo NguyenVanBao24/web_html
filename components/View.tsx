@@ -11,7 +11,7 @@ interface ViewProps {
 }
 
 const View: React.FC<ViewProps> = ({ data, textOnlyInput }) => {
-  const contentToCopy = `<div style="display: flex; margin: 20px; align-items: center;m>
+  const contentToCopy = `<div style="display: flex; margin: 20px; align-items: center;">
     <div style="width: 30%;">
       <img alt="Company Logo" id="logo" src="/files/${textOnlyInput}">
     </div>
