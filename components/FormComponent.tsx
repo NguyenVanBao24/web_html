@@ -25,7 +25,7 @@ const FormComponent: React.FC<FormComponentProps> = React.memo(({ formIndex, che
     <div>
       <div>
         {/* Các checkbox */}
-        {['color: #000', 'color: #999999', 'font-style: italic', 'font-weight: bolder', 'text-decoration: underline'].map((color) => (
+        {['color: #fff', 'color: #999999', 'font-style: italic', 'font-weight: bolder', 'text-decoration: underline'].map((color) => (
           <label
             key={color}
             htmlFor={`${formIndex}-${color}`}

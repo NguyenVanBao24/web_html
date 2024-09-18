@@ -42,6 +42,8 @@ const FormGroup: React.FC<FormGroupProps> = ({ onDataChange }) => {
     onDataChange(formData, textOnlyInput);
   };
 
+  console.log(formData);
+
   const placeholders = ['name_vn', 'name_en', 'tax', 'address_vn', 'address_en'];
 
   return (
@@ -67,13 +69,15 @@ const FormGroup: React.FC<FormGroupProps> = ({ onDataChange }) => {
           placeholder='Enter IMAGE'
         />
       </div>
-      <Button
-        variant='contained'
-        onClick={handleSubmit}
-        className='w-full'
-      >
-        Show All Data
-      </Button>
+      <div>
+        <Button
+          variant='contained'
+          onClick={handleSubmit}
+          className='w-full'
+        >
+          Show All Data
+        </Button>
+      </div>
     </div>
   );
 };

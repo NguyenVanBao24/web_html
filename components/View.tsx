@@ -21,26 +21,26 @@ const View: React.FC<ViewProps> = ({ data, textOnlyInput }) => {
         `<h1 style="font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize; ${data[0]?.checkedValues[0]};${data[0]?.checkedValues[1]};${data[0]?.checkedValues[2]};${data[0]?.checkedValues[3]};${data[0]?.checkedValues[4]};">${data[0]?.inputValue}</h1>`
       }
       ${
-        data[0]?.inputValue &&
-        `<h1 style='font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize;${data[1]?.checkedValues[0]};${data[0]?.checkedValues[1]};${data[0]?.checkedValues[2]};${data[0]?.checkedValues[3]};${data[0]?.checkedValues[4]};'>${data[1]?.inputValue}</h1>`
+        data[1]?.inputValue &&
+        `<h1 style='font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize;${data[1]?.checkedValues[0]};${data[1]?.checkedValues[1]};${data[1]?.checkedValues[2]};${data[1]?.checkedValues[3]};${data[1]?.checkedValues[4]};'>${data[1]?.inputValue}</h1>`
       }
       ${
-        data[0]?.inputValue &&
-        `<h1 style="font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize;${data[2]?.checkedValues[0]};${data[0]?.checkedValues[1]};${data[0]?.checkedValues[2]};${data[0]?.checkedValues[3]};${data[0]?.checkedValues[4]};">${data[2]?.inputValue}</h1>`
+        data[2]?.inputValue &&
+        `<h1 style="font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize;${data[2]?.checkedValues[0]};${data[2]?.checkedValues[1]};${data[2]?.checkedValues[2]};${data[2]?.checkedValues[3]};${data[2]?.checkedValues[4]};">${data[2]?.inputValue}</h1>`
       }
       ${
-        data[0]?.inputValue &&
-        `<h1 style="font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize;${data[3]?.checkedValues[0]};${data[0]?.checkedValues[1]};${data[0]?.checkedValues[2]};${data[0]?.checkedValues[3]};${data[0]?.checkedValues[4]};">${data[3]?.inputValue}</h1>`
+        data[3]?.inputValue &&
+        `<h1 style="font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize;${data[3]?.checkedValues[0]};${data[3]?.checkedValues[1]};${data[3]?.checkedValues[2]};${data[3]?.checkedValues[3]};${data[3]?.checkedValues[4]};">${data[3]?.inputValue}</h1>`
       }
       ${
-        data[0]?.inputValue &&
-        `<h1 style="font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize;${data[4]?.checkedValues[0]};${data[0]?.checkedValues[1]};${data[0]?.checkedValues[2]};${data[0]?.checkedValues[3]};${data[0]?.checkedValues[4]};">
+        data[4]?.inputValue &&
+        `<h1 style="font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize;${data[4]?.checkedValues[0]};${data[4]?.checkedValues[1]};${data[4]?.checkedValues[2]};${data[4]?.checkedValues[3]};${data[4]?.checkedValues[4]};">
       ${data[4]?.inputValue}
       </h1>`
       }
       ${
-        data[0]?.inputValue &&
-        `<h1 style="font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize;${data[5]?.checkedValues[0]};${data[0]?.checkedValues[1]};${data[0]?.checkedValues[2]};${data[0]?.checkedValues[3]};${data[0]?.checkedValues[4]};">
+        data[5]?.inputValue &&
+        `<h1 style="font-size: 9px;font-weight: 500; padding: 0; margin: 0; text-transform: capitalize;${data[5]?.checkedValues[0]};${data[5]?.checkedValues[1]};${data[5]?.checkedValues[2]};${data[5]?.checkedValues[3]};${data[5]?.checkedValues[4]};">
       ${data[5]?.inputValue}
       </h1>`
       }
